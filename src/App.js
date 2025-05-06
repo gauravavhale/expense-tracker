@@ -78,16 +78,16 @@ function App() {
                 <li key={expense.id} className="expense-item">
                   <div>
                     <span>{expense.description}</span>
-                    <span> {expense.amount.toFixed(2)} Rs</span>
+                    <span> {expense.amount.toFixed(2)}</span>
                     <span>{expense.category}</span>
                     <span>{expense.date}</span>
-                  </div>
-                  <button
+                    <button
                     onClick={() => deleteExpense(expense.id)}
                     className="delete-btn"
-                  >
-                    Delete
+                    >
+                    <i className='bi bi-trash'></i>
                   </button>
+                  </div>
                 </li>
               ))}
             </ul>
