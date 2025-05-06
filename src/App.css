@@ -83,3 +83,92 @@ ul {
   list-style: none;
   padding: 0;
 }
+
+/* Media Queries for Mobile View (up to 600px) */
+@media (max-width: 600px) {
+  .app {
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+
+  h1 {
+    font-size: 1.5rem; /* Smaller heading */
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  .expense-form {
+    flex-direction: column; /* Stack form elements vertically */
+    gap: 10px;
+  }
+
+  .expense-form input{
+    width: 90%; /* Full-width inputs */
+    font-size: 14px; /* Smaller font size */
+  }
+
+  .expense-form select {
+    width: 41%; /* Full-width inputs */
+    font-size: 14px; /* Smaller font size */
+  }
+
+  .expense-form button {
+    width: 50%; /* Full-width button */
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .expense-list {
+    padding-top: 1rem;
+    box-sizing: content-box;
+  }
+
+  .expense-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .expense-item {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  margin-bottom: 0.5rem;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+  .expense-item div {
+    display: flex;
+    gap: 0px;
+  }
+
+  .expense-item span
+  {
+    padding: 8px 0px;
+    min-width: 82px;
+    max-width: 82px;
+    font-size: 14px; /* Smaller text */
+  }
+
+  .delete-btn
+  {
+    width: 30px;
+    font-size: 14px; /* Smaller text */
+  }
+
+  .delete-btn {
+    width: 30px;
+    padding: 8px;
+  }
+
+  .total {
+    text-align: center; /* Center total for better mobile appearance */
+    margin-top: 15px;
+  }
+}
+
