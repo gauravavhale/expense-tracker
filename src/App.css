@@ -135,15 +135,14 @@ ul {
   }
 
   .expense-item {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  margin-bottom: 0.5rem;
-  background-color: #f9f9f9;
-  border-radius: 5px;
+    padding: 10px 0px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
 }
 
   .expense-item div {
     display: flex;
+    align-items: center;
     gap: 0px;
   }
 
@@ -156,15 +155,15 @@ ul {
     font-size: 14px; /* Smaller text */
   }
 
+  .expense-item div span:last-child {
+    margin-left: auto;     /* Pushes the last span (with the button) to the right */
+  }
+
   .delete-btn
   {
     width: 30px;
-    font-size: 14px; /* Smaller text */
-  }
-
-  .delete-btn {
-    width: 30px;
     padding: 8px;
+    font-size: 14px; /* Smaller text */
   }
 
   .total {
