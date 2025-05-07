@@ -81,12 +81,14 @@ function App() {
                     <span> {expense.amount.toFixed(2)}</span>
                     <span>{expense.category}</span>
                     <span>{expense.date}</span>
-                    <button
-                    onClick={() => deleteExpense(expense.id)}
-                    className="delete-btn"
-                    >
-                    <i className='bi bi-trash'></i>
-                  </button>
+                    <span>
+                      <button
+                       onClick={() => deleteExpense(expense.id)}
+                       className="delete-btn"
+                       >
+                       <i className='bi bi-trash'></i>
+                      </button>
+                    </span>
                   </div>
                 </li>
               ))}
